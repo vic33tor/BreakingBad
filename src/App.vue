@@ -32,7 +32,7 @@ export default {
   data() {
     return {
       listaPersonajes: [],
-      listaPersonajesFav: JSON.parse(localStorage.getItem("favs")),
+      listaPersonajesFav: JSON.parse(localStorage.getItem("favs"))?JSON.parse(localStorage.getItem("favs")):[],
       filtrar_por: "",
       loading: false,
     };
